@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Researchur.Co Brand Identity Manual</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0F1B2D;
+  --paper:#F6F4EF;
+  --white:#FFFFFF;
+  --amber:#FBB03B;
+  --burnt:#B5651D;
+  --slate:#4A5568;
+  --line:#E3DFD5;
+  --serif:"Fraunces",Georgia,serif;
+  --sans:"Inter",Arial,sans-serif;
+  box-sizing:border-box;
+}
+*{box-sizing:border-box}
+body{margin:0;background:#D9D5CB;font-family:var(--sans);color:var(--navy);padding:40px 0}
+.page{
+  width:1280px;height:720px;margin:0 auto 40px;background:var(--paper);
+  position:relative;overflow:hidden;padding:72px 88px;
+  box-shadow:0 2px 12px rgba(15,27,45,.08);
+}
+.page.dark{background:var(--navy);color:var(--paper)}
+.page.white{background:var(--white)}
+.folio{position:absolute;left:88px;bottom:40px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--slate)}
+.folio.r{left:auto;right:88px}
+.dark .folio{color:#9AA6B8}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--burnt);margin:0 0 16px}
+.dark .kicker{color:var(--amber)}
+h1,h2{font-family:var(--serif);font-weight:500;margin:0}
+h1{font-size:64px;line-height:1.05}
+h2{font-size:40px;line-height:1.15;margin-bottom:24px}
+h3{font-size:16px;font-weight:600;margin:0 0 8px;letter-spacing:.02em}
+p{font-size:17px;line-height:1.6;margin:0;color:var(--slate)}
+.dark p{color:#C9D1DD}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:56px;height:100%}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.rule{border-top:1px solid var(--line);padding-top:16px}
+.dark .rule{border-top-color:#2A3A52}
+ 
+/* logo artwork */
+.lockup{display:flex;align-items:center;gap:20px}
+.lockup .name{font-family:var(--sans);font-weight:700;line-height:1.02;letter-spacing:-.01em}
+.lockup .name small{display:block;font-weight:500;font-size:.78em}
+.lockup .name .co{color:var(--burnt)}
+.dark .lockup .name .co{color:var(--amber)}
+.stage{display:flex;align-items:center;justify-content:center;background:var(--white);border:1px solid var(--line);border-radius:6px;height:420px}
+.stage.navy{background:var(--navy);border-color:var(--navy)}
+.stage.amber{background:var(--amber);border-color:var(--amber)}
+.stage.paper{background:var(--paper)}
+.caption{font-size:13px;color:var(--slate);margin-top:14px;letter-spacing:.02em}
+ 
+/* colour swatches */
+.swatch{height:260px;border-radius:6px;padding:20px;display:flex;flex-direction:column;justify-content:flex-end}
+.swatch b{font-size:18px;font-weight:600}
+.swatch span{font-size:13px;opacity:.8;margin-top:4px;line-height:1.5}
+ 
+.tdemo{font-family:var(--serif);font-weight:500}
+ 
+.list{list-style:none;padding:0;margin:0}
+.list li{padding:14px 0;border-bottom:1px solid var(--line);font-size:16px;color:var(--navy)}
+.list li:first-child{border-top:1px solid var(--line)}
+.cross{display:inline-block;width:22px;color:var(--burnt);font-weight:700;margin-right:10px}
+.misuse{border:1px dashed #C9C2B3;border-radius:6px;height:150px;display:flex;align-items:center;justify-content:center;background:var(--white);position:relative}
+.misuse .x{position:absolute;top:10px;right:12px;color:var(--burnt);font-weight:700;font-size:14px}
+</style>
+</head>
+<body>
+ 
+<!-- Shared mark: navy quadrants with amber dot (recreated for this manual; replace with master artwork) -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <symbol id="mark" viewBox="0 0 90.667 90.667"><path d="M21.352 6.856 C28.177 2.593 36.218 0.096 44.835 0.003 L44.835 44.835 L0.003 44.835 C0.089 36.845 2.242 29.351 5.953 22.862 C7.929 26.474 11.764 28.923 16.171 28.923 C22.6 28.923 27.812 23.711 27.812 17.283 C27.812 12.715 25.181 8.762 21.352 6.856 Z" fill="currentColor"/><path d="M45.835 44.832 L45.835 0 L90.667 0 C90.401 24.641 70.476 44.566 45.835 44.832 Z" fill="currentColor"/><path d="M0 90.667 L0 45.835 L44.832 45.835 C44.566 70.476 24.641 90.401 0 90.667 Z" fill="currentColor"/><path d="M5.531 17.283 C5.531 11.406 10.295 6.642 16.171 6.642 C17.442 6.642 18.66 6.865 19.789 7.273 L19.789 7.273 C19.981 7.342 20.17 7.417 20.356 7.496 L20.356 7.496 C24.152 9.122 26.812 12.892 26.812 17.283 C26.812 23.159 22.048 27.923 16.171 27.923 C10.295 27.923 5.531 23.159 5.531 17.283 Z" fill="#FBB03B"/></symbol><symbol id="mark-mono" viewBox="0 0 90.667 90.667"><path d="M21.352 6.856 C28.177 2.593 36.218 0.096 44.835 0.003 L44.835 44.835 L0.003 44.835 C0.089 36.845 2.242 29.351 5.953 22.862 C7.929 26.474 11.764 28.923 16.171 28.923 C22.6 28.923 27.812 23.711 27.812 17.283 C27.812 12.715 25.181 8.762 21.352 6.856 Z" fill="currentColor"/><path d="M45.835 44.832 L45.835 0 L90.667 0 C90.401 24.641 70.476 44.566 45.835 44.832 Z" fill="currentColor"/><path d="M0 90.667 L0 45.835 L44.832 45.835 C44.566 70.476 24.641 90.401 0 90.667 Z" fill="currentColor"/><path d="M5.531 17.283 C5.531 11.406 10.295 6.642 16.171 6.642 C17.442 6.642 18.66 6.865 19.789 7.273 L19.789 7.273 C19.981 7.342 20.17 7.417 20.356 7.496 L20.356 7.496 C24.152 9.122 26.812 12.892 26.812 17.283 C26.812 23.159 22.048 27.923 16.171 27.923 C10.295 27.923 5.531 23.159 5.531 17.283 Z" fill="currentColor"/></symbol>
+  </defs>
+</svg>
+ 
+<!-- 1 Cover -->
+<section class="page dark">
+  <div style="display:flex;flex-direction:column;justify-content:space-between;height:100%">
+    <div class="lockup" style="color:var(--paper)">
+      <svg width="64" height="64" viewBox="0 0 60 60"><use href="#mark" style="color:#F6F4EF"/></svg>
+      <div class="name" style="font-size:26px">Researchur<br>Consult</div>
+    </div>
+    <div>
+      <p class="kicker">Brand identity manual</p>
+      <h1 style="font-size:88px;line-height:1">Improve how your business looks, operates and grows.</h1>
+    </div>
+    <div style="display:flex;justify-content:space-between;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#9AA6B8">
+      <span>Version 1.0</span><span>Researchur.Co</span>
+    </div>
+  </div>
+</section>
+ 
+<!-- 2 Contents -->
+<section class="page">
+  <p class="kicker">Contents</p>
+  <div class="grid2" style="height:auto;gap:24px 56px;grid-template-columns:1fr 1fr;margin-top:24px">
+    <div class="rule"><h3>01 &nbsp;Our brand</h3><p>Purpose, positioning and values</p></div>
+    <div class="rule"><h3>05 &nbsp;Colour</h3><p>Palette and usage ratios</p></div>
+    <div class="rule"><h3>02 &nbsp;The logo</h3><p>Primary mark and lockup</p></div>
+    <div class="rule"><h3>06 &nbsp;Typography</h3><p>Typefaces and hierarchy</p></div>
+    <div class="rule"><h3>03 &nbsp;Logo variations</h3><p>Versions for each background</p></div>
+    <div class="rule"><h3>07 &nbsp;Voice</h3><p>How we sound in writing</p></div>
+    <div class="rule"><h3>04 &nbsp;Clear space and misuse</h3><p>Protecting the logo</p></div>
+    <div class="rule"><h3>08 &nbsp;Applications</h3><p>Stationery, digital and documents</p></div>
+  </div>
+  <span class="folio">Contents</span>
+</section>
+ 
+<!-- 3 Brand purpose -->
+<section class="page">
+  <div class="grid2">
+    <div>
+      <p class="kicker">01 · Our brand</p>
+      <h2>A research-led partner for growing businesses.</h2>
+      <p>Researchur Consult helps start-ups and small businesses improve how they look, operate and grow. We listen first, understand the real bottleneck, and only then recommend what will help.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:28px;justify-content:center">
+      <div class="rule"><h3>Look</h3><p>Branding and graphic design that build trust.</p></div>
+      <div class="rule"><h3>Operate</h3><p>Business analysis and process improvement.</p></div>
+      <div class="rule"><h3>Grow</h3><p>Business plans and strategic planning.</p></div>
+    </div>
+  </div>
+  <span class="folio">Researchur.Co · Brand identity manual</span>
+  <span class="folio r">03</span>
+</section>
+ 
+<!-- 4 Values -->
+<section class="page white">
+  <p class="kicker">01 · Our brand</p>
+  <h2>What guides us</h2>
+  <div class="grid3" style="margin-top:32px">
+    <div class="rule"><h3>Listen first</h3><p>We understand before we advise.</p></div>
+    <div class="rule"><h3>Practical over perfect</h3><p>Advice a small team can act on this month.</p></div>
+    <div class="rule"><h3>Plain language</h3><p>No jargon and no padding.</p></div>
+    <div class="rule"><h3>Honest</h3><p>We say when we are not the right fit.</p></div>
+    <div class="rule"><h3>Personal</h3><p>Real conversations, in person or by call.</p></div>
+  </div>
+  <span class="folio">Researchur.Co · Brand identity manual</span>
+  <span class="folio r">04</span>
+</section>
+ 
+<!-- 5 Primary logo -->
+<section class="page">
+  <div class="grid2" style="grid-template-columns:1.4fr 1fr">
+    <div class="stage paper" style="height:500px">
+      <div class="lockup">
+        <svg width="150" height="150" viewBox="0 0 60 60" style="color:var(--navy)"><use href="#mark"/></svg>
+        <div class="name" style="font-size:52px">Researchur<br>Consult</div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;justify-content:center">
+      <p class="kicker">02 · The logo</p>
+      <h2>Primary logo</h2>
+      <p>The mark is built from navy quarter-circles and blocks, with an amber dot that signals the spark of a good conversation. The stacked lockup is our main logo and should be used wherever space allows.</p>
+      <p style="margin-top:20px;font-size:14px">Always use the master artwork files. Never redraw the logo.</p>
+    </div>
+  </div>
+  <span class="folio">Researchur.Co · Brand identity manual</span>
+  <span class="folio r">05</span>
+</section>
+ 
+<!-- 6 Mark and anatomy -->
+<section class="page white">
+  <p class="kicker">02 · The logo</p>
+  <h2>Anatomy of the mark</h2>
+  <div class="grid3" style="grid-template-columns:1fr 1fr 1fr;align-items:end;margin-top:24px">
+    <div>
+      <div class="stage paper" style="height:300px"><svg width="180" height="180" viewBox="0 0 60 60" style="color:var(--navy)"><use href="#mark"/></svg></div>
+      <p class="caption">Three navy forms: two quarter-circles and a block.</p>
+    </div>
+    <div>
+      <div class="stage paper" style="height:300px"><svg width="180" height="180" viewBox="0 0 60 60"><use href="#mark" style="color:var(--navy)"/></svg></div>
+      <p class="caption">The amber dot sits in the open top-left corner, never on top of navy.</p>
+    </div>
+    <div>
+      <div class="stage paper" style="height:300px"><svg width="180" height="180" viewBox="0 0 60 60" style="color:var(--navy)"><use href="#mark"/></svg></div>
+      <p class="caption">Keep the proportions fixed. The dot is always one quarter of the mark's height.</p>
+    </div>
+  </div>
+  <span class="folio">Researchur.Co · Brand identity manual</span>
+  <span class="folio r">06</span>
+</section>
+ 
+<!-- 7 Logo variations -->
+<section class="page">
+  <p class="kicker">03 · Logo variations</p>
+  <h2 style="margin-bottom:24px">Versions for every background</h2>
+  <div class="grid3" style="grid-template-columns:1fr 1fr 1fr;gap:24px">
+    <div>
+      <div class="stage paper" style="height:250px"><div class="lockup"><svg width="70" height="70" viewBox="0 0 60 60" style="color:var(--navy)"><use href="#mark"/></svg><div class="name" style="font-size:24px;color:var(--navy)">Researchur<br>Consult</div></div></div>
+      <p class="caption"><b>Primary:</b> on light backgrounds</p>
+    </div>
+    <div>
+      <div class="stage navy" style="height:250px"><div class="lockup"><svg width="70" height="70" viewBox="0 0 60 60" style="color:var(--paper)"><use href="#mark"/></svg><div class="name" style="font-size:24px;color:var(--paper)">Researchur<br>Consult</div></div></div>
+      <p class="caption"><b>Reversed:</b> on navy and dark photography</p>
+    </div>
+    <div>
+      <div class="stage white" style="height:250px"><svg width="110" height="110" viewBox="0 0 60 60" style="color:var(--navy)"><use href="#mark"/></svg></div>
+      <p class="caption"><b>Mark only:</b> profile pictures, favicon, small spaces</p>
+    </div>
+  </div>
+  <span class="folio">Researchur.Co · Brand identity manual</span>
+  <span class="folio r">07</span>
+</section>
+ 
+ 
+<!-- 7a Logo versions: primary and secondary -->
+<section class="page">
+  <p class="kicker">03 · Logo versions</p>
+  <h2 style="margin-bottom:20px">Primary and secondary</h2>
+  <div class="grid2" style="grid-template-columns:1fr 1fr;gap:24px;height:500px">
+    <div>
+      <div class="stage paper" style="height:400px"><div class="lockup" style="color:#0F1B2D"><svg width="110" height="110" viewBox="0 0 90.667 90.667" style="display:block;color:#0F1B2D"><use href="#mark"/></svg><div class="name" style="font-size:30px;color:#0F1B2D">Researchur<br>Consult</div></div></div>
+      <p class="caption"><b>Primary (stacked):</b> main logo for print, brochures, business cards and the website hero.</p>
+    </div>
+    <div>
+      <div class="stage white" style="height:400px"><div class="lockup" style="color:#0F1B2D;gap:14px"><svg width="64" height="64" viewBox="0 0 90.667 90.667" style="display:block;color:#0F1B2D"><use href="#mark"/></svg><div><div class="name" style="font-size:24px;color:#0F1B2D">Researchur Consult</div><div style='font-size:13px;color:#0F1B2D;opacity:.7;margin-top:4px;letter-spacing:.02em'>researchur.co</div></div></div></div>
+      <p class="caption"><b>Secondary (horizontal):</b> website header, email signature, letterheads and wide layouts.</p>
+    </div>
+  </div>
+  <span class="folio">Researchur.Co · Brand identity manual</span>
+  <span class="folio r">07a</span>
+</section>
+ 
+<!-- 7b Logo versions: screen and layout -->
+<section class="page white">
+  <p class="kicker">03 · Logo versions</p>
+  <h2 style="margin-bottom:20px">Versions by screen and layout</h2>
+  <div class="grid3" style="grid-template-columns:repeat(4,1fr);gap:18px">
+    <div>
+      <div class="stage paper" style="height:200px"><svg width="72" height="72" viewBox="0 0 90.667 90.667" style="display:block;color:#0F1B2D"><use href="#mark"/></svg></div>
+      <p class="caption"><b>Mark only</b><br>Favicon, app icon, social avatar, small spaces.</p>
+    </div>
+    <div>
+      <div class="stage navy" style="height:200px"><svg width="72" height="72" viewBox="0 0 90.667 90.667" style="display:block;color:#F6F4EF"><use href="#mark"/></svg></div>
+      <p class="caption"><b>Mark reversed</b><br>Dark screens, dark mode, navy and photo backgrounds.</p>
+    </div>
+    <div>
+      <div class="stage" style="height:200px;background:#0F1B2D;border-radius:22px;border:none"><svg width="96" height="96" viewBox="0 0 90.667 90.667" style="display:block;color:#F6F4EF"><use href="#mark"/></svg></div>
+      <p class="caption"><b>App icon</b><br>Mobile home screen, with the mark on a navy tile.</p>
+    </div>
+    <div>
+      <div class="stage white" style="height:200px;flex-direction:column;gap:14px"><svg width="60" height="60" viewBox="0 0 90.667 90.667" style="display:block;color:#000"><use href="#mark-mono"/></svg><span style="font-size:12px;color:#4A5568">Mono black</span></div>
+      <p class="caption"><b>Mono (black or white)</b><br>Single-colour print, stamps, fax and engraving.</p>
+    </div>
+  </div>
+  <div style="display:flex;gap:18px;margin-top:22px">
+    <div class="rule" style="flex:1"><h3>Desktop website</h3><p>Secondary horizontal logo in the header.</p></div>
+    <div class="rule" style="flex:1"><h3>Mobile</h3><p>Mark only, with the name shown on larger screens.</p></div>
+    <div class="rule" style="flex:1"><h3>Social media</h3><p>Mark on navy as the profile picture, primary logo on banners.</p></div>
+    <div class="rule" style="flex:1"><h3>Print</h3><p>Primary stacked logo. Mono for single-colour jobs.</p></div>
+  </div>
+  <span class="folio">Researchur.Co · Brand identity manual</span>
+  <span class="folio r">07b</span>
+</section>
+ 
+<!-- 8 Clear space and minimum size -->
+<section class="page white">
+  <p class="kicker">04 · Clear space and size</p>
+  <div class="grid2" style="grid-template-columns:1.4fr 1fr">
+    <div class="stage paper" style="height:460px;position:relative">
+      <div style="position:relative;padding:44px;border:1px dashed var(--burnt)">
+        <div class="lockup">
+          <svg width="90" height="90" viewBox="0 0 60 60" style="color:var(--navy)"><use href="#mark"/></svg>
+          <div class="name" style="font-size:32px">Researchur<br>Consult</div>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;justify-content:center">
+      <h2>Clear space</h2>
+      <p>Keep a margin equal to the height of the mark's navy block (x) on all sides of the logo. Nothing else, including text, images and edges, should enter this space.</p>
+      <div class="rule" style="margin-top:28px"><h3>Minimum size</h3><p>Print: 25 mm wide. Digital: 120 px wide. Below this, use the mark only.</p></div>
+    </div>
+  </div>
+  <span class="folio">Researchur.Co · Brand identity manual</span>
+  <span class="folio r">08</span>
+</section>
+ 
+<!-- 9 Misuse -->
+<section class="page">
+  <p class="kicker">04 · Protecting the logo</p>
+  <h2 style="margin-bottom:24px">Logo misuse</h2>
+  <div class="grid3" style="grid-template-columns:repeat(4,1fr);gap:20px">
+    <div><div class="misuse"><span class="x">✕</span><span style="transform:scaleX(1.5);font-weight:700;font-size:20px">Researchur</span></div><p class="caption">Do not stretch or distort.</p></div>
+    <div><div class="misuse"><span class="x">✕</span><span style="transform:rotate(-12deg);font-weight:700;font-size:20px;color:var(--navy)">Researchur</span></div><p class="caption">Do not rotate.</p></div>
+    <div><div class="misuse"><span class="x">✕</span><span style="font-weight:700;font-size:20px;color:#2E9E5B">Researchur</span></div><p class="caption">Do not recolour outside the palette.</p></div>
+    <div><div class="misuse"><span class="x">✕</span><span style="text-shadow:3px 3px 0 #999;font-weight:700;font-size:20px">Researchur</span></div><p class="caption">Do not add shadows or effects.</p></div>
+  </div>
+  <ul class="list" style="margin-top:24px;columns:2;column-gap:56px">
+    <li><span class="cross">✕</span>Do not remove or move the amber dot.</li>
+    <li><span class="cross">✕</span>Do not place the logo on busy photos without clear space.</li>
+    <li><span class="cross">✕</span>Do not retype the wordmark in another font.</li>
+    <li><span class="cross">✕</span>Do not rearrange the mark or redraw it.</li>
+  </ul>
+  <span class="folio">Researchur.Co · Brand identity manual</span>
+  <span class="folio r">09</span>
+</section>
+ 
+<!-- 10 Colour -->
+<section class="page white">
+  <p class="kicker">05 · Colour</p>
+  <h2 style="margin-bottom:28px">Palette</h2>
+  <div class="grid3" style="grid-template-columns:repeat(5,1fr);gap:16px">
+    <div class="swatch" style="background:var(--navy);color:var(--paper)"><b>Navy</b><span>#0F1B2D<br>RGB 15 27 45<br>CMYK 100 80 45 60</span></div>
+    <div class="swatch" style="background:var(--amber);color:var(--navy)"><b>Amber</b><span>#FBB03B<br>RGB 251 176 59<br>CMYK 0 30 77 0</span></div>
+    <div class="swatch" style="background:var(--burnt);color:var(--paper)"><b>Burnt amber</b><span>#B5651D<br>RGB 181 101 29<br>CMYK 0 60 85 15</span></div>
+    <div class="swatch" style="background:var(--paper);color:var(--navy);border:1px solid var(--line)"><b>Paper</b><span>#F6F4EF<br>RGB 246 244 239<br>CMYK 2 2 5 0</span></div>
+    <div class="swatch" style="background:var(--slate);color:var(--paper)"><b>Slate</b><span>#4A5568<br>RGB 74 85 104<br>CMYK 70 60 40 15</span></div>
+  </div>
+  <p style="margin-top:28px;font-size:15px">Use roughly 60% paper or white, 30% navy, and 10% amber for accents. Burnt amber is for text on light backgrounds.</p>
+  <span class="folio">Researchur.Co · Brand identity manual</span>
+  <span class="folio r">10</span>
+</section>
+ 
+<!-- 11 Typography -->
+<section class="page">
+  <p class="kicker">06 · Typography</p>
+  <div class="grid2" style="grid-template-columns:1fr 1fr;gap:64px">
+    <div>
+      <h2>Typefaces</h2>
+      <div class="rule"><h3>Fraunces · Headings</h3><p class="tdemo" style="font-size:44px;color:var(--navy);line-height:1.2">Clear insight, calmly told.</p><p class="caption">Medium weight (500). Free on Google Fonts. Fallback: Georgia.</p></div>
+      <div class="rule" style="margin-top:28px"><h3>Inter · Body and interface</h3><p style="font-size:20px;color:var(--navy);font-family:var(--sans)">Practical advice you can act on.</p><p class="caption">Regular (400), medium (500), semibold (600). Fallback: Arial.</p></div>
+    </div>
+    <div>
+      <h2>Hierarchy</h2>
+      <div class="rule"><p style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--burnt);font-weight:600">Kicker · 13 px, caps, tracked</p></div>
+      <div class="rule"><p class="tdemo" style="font-size:36px;color:var(--navy)">Heading · 40 px</p></div>
+      <div class="rule"><p style="font-size:17px;color:var(--slate)">Body · 17 px, line height 1.6</p></div>
+      <div class="rule"><p style="font-size:13px;color:var(--slate)">Caption · 13 px</p></div>
+    </div>
+  </div>
+  <span class="folio">Researchur.Co · Brand identity manual</span>
+  <span class="folio r">11</span>
+</section>
+ 
+<!-- 12 Voice -->
+<section class="page white">
+  <p class="kicker">07 · Voice</p>
+  <h2>How we sound</h2>
+  <p style="max-width:720px;margin-bottom:32px">Warm, clear, confident and straightforward. Write the way you would talk to a founder across a table.</p>
+  <div class="grid2" style="height:auto;grid-template-columns:1fr 1fr;gap:32px">
+    <div class="rule"><h3 style="color:var(--slate)">Instead of</h3><p>We leverage synergies to optimise outcomes.</p></div>
+    <div class="rule"><h3 style="color:var(--burnt)">We say</h3><p style="color:var(--navy)">We help your business run better.</p></div>
+    <div class="rule"><h3 style="color:var(--slate)">Instead of</h3><p>Request a formal consultation.</p></div>
+    <div class="rule"><h3 style="color:var(--burnt)">We say</h3><p style="color:var(--navy)">Book a free meeting.</p></div>
+  </div>
+  <span class="folio">Researchur.Co · Brand identity manual</span>
+  <span class="folio r">12</span>
+</section>
+ 
+<!-- 13 Applications -->
+<section class="page">
+  <p class="kicker">08 · Applications</p>
+  <h2 style="margin-bottom:24px">In use</h2>
+  <div class="grid2" style="grid-template-columns:1.3fr 1fr;gap:24px;height:500px">
+    <div class="stage navy" style="height:100%;justify-content:flex-start;padding:36px;align-items:flex-end;flex-direction:column">
+      <div class="lockup" style="color:var(--paper)">
+        <svg width="50" height="50" viewBox="0 0 60 60" style="color:var(--paper)"><use href="#mark"/></svg>
+        <div class="name" style="font-size:20px;color:var(--paper)">Researchur<br>Consult</div>
+      </div>
+      <p style="color:#C9D1DD;font-size:13px;margin-top:auto;align-self:flex-start">Researchur.Co · hello@researchur.co</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <div class="stage white" style="height:100%;flex-direction:column;align-items:flex-start;padding:28px;justify-content:space-between">
+        <div class="lockup"><svg width="34" height="34" viewBox="0 0 60 60" style="color:var(--navy)"><use href="#mark"/></svg><div class="name" style="font-size:14px;color:var(--navy)">Researchur<br>Consult</div></div>
+        <p style="font-size:13px;color:var(--slate)">Website header · Email signature · Business card</p>
+      </div>
+    </div>
+  </div>
+  <span class="folio">Researchur.Co · Brand identity manual</span>
+  <span class="folio r">13</span>
+</section>
+ 
+<!-- 14 Closing -->
+<section class="page dark">
+  <div style="display:flex;flex-direction:column;justify-content:space-between;height:100%">
+    <div></div>
+    <div>
+      <p class="kicker">Questions about the brand</p>
+      <h1 style="font-size:72px">Keep it clear. Keep it consistent.</h1>
+    </div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-end">
+      <div class="lockup" style="color:var(--paper)">
+        <svg width="48" height="48" viewBox="0 0 60 60" style="color:var(--paper)"><use href="#mark"/></svg>
+        <div class="name" style="font-size:20px;color:var(--paper)">Researchur<br>Consult</div>
+      </div>
+      <span style="font-size:13px;color:#9AA6B8;letter-spacing:.14em;text-transform:uppercase">Researchur.Co</span>
+    </div>
+  </div>
+</section>
+ 
+</body>
+</html>
+ 
+
